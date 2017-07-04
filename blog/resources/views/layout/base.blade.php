@@ -13,35 +13,16 @@
 </head>
 
 <body>
-    @include('layouts.header')
-    @section('page-content')
+    @include('layout.header')
     <div class="container">
-        <div class="col-md-3 sidebar">
-            @include('layouts.sidebar')
+        <div class="col-md-12 content">
+            @yield('content')
         </div>
-        <div class="col-md-9 content">
-            <div class="col-md-12 product">
-                @yield('product-name')
-            </div>
-            <div class="col-md-12">
-                @yield('breadcrumbs')
-            </div>
-            <div class="col-md-12 content-div">
-                @yield('content')
-            </div>
-            <div class="col-md-12 last-updated">
-                @yield('last-updated')
-                <div class="pull-right last-cc">
-                    <a href="https://creativecommons.org/licenses/by/4.0/">
-                    <img alt="Creative Commons Attribution 4.0 International (CC BY 4.0)"
-                    src="/image/CC-attribution.png">
-                    </a>
-                </div>
-            </div>
+        <div class="col-md-12 last-updated">
+            @yield('last-updated')
         </div>
     </div>
-    @endsection
-    @include('layouts.footer')
+    @include('layout.footer')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     @yield('javascript')
