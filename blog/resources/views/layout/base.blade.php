@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    @include('layout.header')
     <div class="container">
         <div class="col-md-12 content">
             @yield('content')
