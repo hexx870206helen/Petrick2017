@@ -14,3 +14,9 @@
 Route::get('/home', function () {
     return view('content.home');
 });
+
+Route::get('add-user',function(){
+	$name = Input::get('user_name');
+	$sql = "INSERT INTO users (id,name) VALUES (?,?)";
+	DB::INSERT($sql,array(1,$name));
+})

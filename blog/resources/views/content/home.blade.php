@@ -58,11 +58,12 @@ hahahah
 					</div>	
 				</div>
 				<div class="col-sm-4">
-					<div class="col-sm-12 content-item">
-						<div class="content-title">
-							<h2>Say somthing...</h2>
-						</div>
-					</div>	
+					<div class="col-sm-12 form-group">
+						<form method="get" action="add-user">
+							<label for="usr">Name:</label>
+	  						<input type="text" class="form-control" id="usr" name="user_name">
+  						</form>
+					</div>
 				</div>
 			</div>
 			<div class="body-content col-sm-12">
