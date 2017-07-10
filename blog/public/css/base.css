@@ -4,8 +4,24 @@
 }
 
 .navbar {
-	height: 100px;
+	height: 150px;
 	margin-bottom: 0px;
+	background-color: brown;
+	color: white;
+}
+
+.header-wrapper {
+	height: 150px;
+	margin-top: 100px !important;
+}
+
+.navbar-nav>li>a,
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover{
+	color: white !important;
+	background-color: transparent;
+	box-shadow: 0 -3px 0px yellow;
+	font-size: 20px;
 }
 
 .container {
