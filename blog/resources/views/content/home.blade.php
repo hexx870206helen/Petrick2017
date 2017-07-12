@@ -13,99 +13,67 @@ hahahah
 @endsection
 
 @section('content')
-
-<div class="content_wrapper">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-		<ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
-		    <li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner">
-		    <div class="item active">
-		        <img src="{{URL::asset('image/banner-1.jpg')}}" alt="brisbane">
-		    </div>
-		    <div class="item">
-		        <img src="{{URL::asset('image/banner-2.jpg')}}" alt="brisbane">
-		    </div>
-		    <div class="item">
-		        <img src="{{URL::asset('image/banner-3.jpg')}}" alt="brisbane">
-		    </div>
+	<div class="body container-fluid">
+		<div class="body-one col-sm-10">
+			<div class="col-sm-6 content-item">
+				<span class="profile_pic"><img width="50" height ="50" class="img-circle" src="{{URL::asset('image/photo.jpg')}}" alt="profile_pic"></span>
+				<h2 class="content-title">Hi, I am Helen...</h2>
+				<p>I am a junior web developer/designer based in Brisbane, Australia. I have a passion for web design and love to create for web and mobile devices.</p>
+			</div>			
 		</div>
-		<!-- Left and right controls -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		      <span class="glyphicon glyphicon-chevron-left"></span>
-		      <span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-		      <span class="glyphicon glyphicon-chevron-right"></span>
-		      <span class="sr-only">Next</span>
-		</a>
-	</div>
-	<div class="body">
-		<div class="body-one">
-			<div class="body-title">
-			<h5> </h5><h2>Life in Australia</h2><h5> </h5>
-			</div>
-			<div class="body-content col-sm-12">
-				<div class="col-sm-4">
-					<div class="col-sm-12 content-item">
-						<div class="content-title">
-							<h2>My profile</h2>
+		<div class="body-two col-sm-10">
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Studying in China</h4>
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small>2009-2011</p>
 						</div>
-					</div>	
-				</div>
-				<div class="col-sm-4">
-					<div class="col-sm-12 form-group">
-						<form method="get" action="add-user">
-							<label for="usr">Name:</label>
-	  						<input type="text" class="form-control" id="usr" name="user_name">
-  						</form>
+						<div class="tiemline-body">
+							<p>Studying in JiLin university</p>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="body-content col-sm-12">
-				<div class="col-sm-4">
-					<div class="col-sm-12 content-item">
-						<div class="content-title">
-							<h2>Studying</h2>
+				</li>
+				<li class="timeline-inverted">
+					<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Working in China</h4>
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small>20011-2014</p>
 						</div>
-						<div class="thumbnail">
-							<a href="#">
-								<img src="{{URL::asset('image/studying.jpg')}}" alt="">
-							</a>
+						<div class="tiemline-body">
+							<p>Working in China Mobile Company</p>
 						</div>
-					</div>	
-				</div>
-				<div class="col-sm-4">
-					<div class="col-sm-12 content-item">
-						<div class="content-title">
-							<h2>Working</h2>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Studying in Australia</h4>
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small>2014-2016</p>
 						</div>
-						<div class="thumbnail">
-							<a href="#">
-								<img src="{{URL::asset('image/working.jpg')}}" alt="">
-							</a>
+						<div class="tiemline-body">
+							<p>Studying in Queensland University</p>
 						</div>
-					</div>	
-				</div>
-				<div class="col-sm-4">
-					<div class="col-sm-12 content-item">
-						<div class="content-title">
-							<h2>Travelling</h2>
+					</div>
+				</li>
+				<li class="timeline-inverted">
+					<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Working in China</h4>
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small>20016-2017</p>
 						</div>
-						<div class="thumbnail">
-							<a href="#">
-								<img src="{{URL::asset('image/travelling.jpg')}}" alt="">
-							</a>
+						<div class="tiemline-body">
+							<p>Working in DSITI</p>
 						</div>
-					</div>	
-				</div>
-			</div>
-		</div>		
-	</div>	
+					</div>
+				</li>
+			</ul>	
+		</div>
+	</div>		
 </div>
 @endsection
 

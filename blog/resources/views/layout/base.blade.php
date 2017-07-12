@@ -16,7 +16,12 @@
     @include('layout.header')
     <div class="container">
         <div class="col-md-12 content">
+            <div class="col-md-2 slidebar">
+                @include('layout.slidebar')
+            </div>
+            <div class="col-md-10 content-body">
             @yield('content')
+            </div>
         </div>
         <div class="col-md-12 last-updated">
             @yield('last-updated')
